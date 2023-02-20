@@ -9,7 +9,7 @@ RUN apk add --no-cache \
     chromium-chromedriver \
     # for firefox
     dbus \
-    ttf-freefont \
+    font-freefont \
     firefox-esr \
     # ---
     xvfb && \
