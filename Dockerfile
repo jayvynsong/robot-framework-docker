@@ -14,8 +14,8 @@ RUN apk add --no-cache \
     # ---
     xvfb && \
     pip install --no-cache-dir \
-    robotframework==3.0.2 \
-    robotframework-selenium2library==1.8.0 \
+    robotframework==6.0.2 \
+    robotframework-seleniumlibrary==6.0.0 \
     selenium==3.3.1
     # for firefox : selenium==2.53.6
 
