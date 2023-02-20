@@ -4,7 +4,7 @@ LABEL Maintainer="JayvynSong<songxiaojie_2005@163.com>" Version="1.0"
 
 RUN apk add --no-cache \
     # for Chrome
-    udev \
+    eudev \
     chromium \
     chromium-chromedriver \
     # for firefox
