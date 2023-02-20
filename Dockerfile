@@ -16,6 +16,7 @@ RUN apk add --no-cache \
     pip install --no-cache-dir \
     robotframework==6.0.2 \
     robotframework-seleniumlibrary==6.0.0 \
+    robotframework-sshlibrary==3.8.0 \
     selenium==4.8.2
     # for firefox : selenium==2.53.6
 
