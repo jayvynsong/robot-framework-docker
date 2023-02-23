@@ -3,6 +3,9 @@ FROM python:3.12.0a5-alpine3.17
 LABEL Maintainer="JayvynSong<songxiaojie_2005@163.com>" Version="1.0"
 
 RUN apk add --no-cache \
+    gcc \
+    musl-dev \
+    libffi-dev \
     # for Chrome
     eudev \
     chromium \
