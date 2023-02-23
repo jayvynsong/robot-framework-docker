@@ -33,6 +33,7 @@ RUN apk add --no-cache \
 # Disabling sandbox and gpu as default.
 RUN sed -i "s/self._arguments\ =\ \[\]/self._arguments\ =\ \['--no-sandbox',\ '--disable-gpu'\]/" /usr/local/lib/python2.7/site-packages/selenium/webdriver/chrome/options.py
 
+RUN rm -rf /var/cache/apk/*
 COPY entry_point.sh /opt/bin/entry_point.sh
 RUN chmod +x /opt/bin/entry_point.sh
 
