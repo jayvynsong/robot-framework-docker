@@ -38,7 +38,7 @@ RUN apk add --no-cache \
 
 # Chrome requires docker to have cap_add: SYS_ADMIN if sandbox is on.
 # Disabling sandbox and gpu as default.
-# RUN sed -i "s/self._arguments\ =\ \[\]/self._arguments\ =\ \['--no-sandbox',\ '--disable-gpu'\]/" /usr/local/lib/python2.7/site-packages/selenium/webdriver/chrome/options.py
+# RUN sed -i "s/self._arguments\ =\ \[\]/self._arguments\ =\ \['--no-sandbox',\ '--disable-gpu'\]/" /usr/local/lib/python3.12/site-packages/selenium/webdriver/common/options.py
 
 RUN rm -rf /var/cache/apk/*
 COPY entry_point.sh /opt/bin/entry_point.sh
