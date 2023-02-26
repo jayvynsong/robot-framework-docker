@@ -18,9 +18,9 @@ RUN apk add --no-cache \
     xvfb && \
     pip install --no-cache-dir \
     robotframework==6.0.2 \
-    robotframework-seleniumlibrary==6.0.0 \
+    # robotframework-seleniumlibrary==6.0.0 \
     robotframework-sshlibrary==3.8.0 \
-    selenium==4.8.2 && \
+    # selenium==4.8.2 && \
     apk del \
     gcc \ 
     musl-dev \
