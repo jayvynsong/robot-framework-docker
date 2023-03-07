@@ -21,6 +21,8 @@ RUN apk add --no-cache \
     # robotframework-seleniumlibrary==6.0.0 \
     # selenium==4.8.2 \
     robotframework-remoterunner==2.0.0 \
+    pyserial \
+    robotframework-seriallibrary==0.4.3 \
     robotframework-sshlibrary==3.8.0 && \
     apk del \
     gcc \ 
