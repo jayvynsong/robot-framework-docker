@@ -6,6 +6,7 @@ RUN apk add --no-cache \
     gcc \
     musl-dev \
     libffi-dev \
+    git \
     # for Chrome
     # eudev \
     # chromium \
@@ -20,7 +21,7 @@ RUN apk add --no-cache \
     robotframework==6.0.2 \
     # robotframework-seleniumlibrary==6.0.0 \
     # selenium==4.8.2 \
-    robotframework-remoterunner==2.0.0 \
+    git+https://github.com/jayvynsong/robotframework-remoterunner.git \
     pyserial \
     robotframework-seriallibrary==0.4.3 \
     robotframework-sshlibrary==3.8.0 && \
